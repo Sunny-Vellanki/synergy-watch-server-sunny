@@ -11,7 +11,7 @@ const Userdetails = require("./models/signupdetails");
 app.use(express.json());
 app.use(cors());
 
-//mangodb connect
+//mangodb connect to database
 mongoose.connect(`mongodb+srv://sunny:sunnyh123@cluster0.x0yawgr.mongodb.net/SynergyProject?retryWrites=true&w=majority&appName=Cluster0`)
 .then(()=>{
     console.log("database connected")
